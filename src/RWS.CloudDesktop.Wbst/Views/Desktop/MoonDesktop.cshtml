@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <title>CloudDesktop</title>
+    
+    <link type="image/ico" rel="shortcut icon" href="/images/favicon.ico" />
+   
+    @Styles.Render("~/Content/desktop")
+    @Scripts.Render("~/bundles/desktop")
+    <!--ApplicationBlock-->
+    <script type="text/javascript">
+        function logout() { }
+    </script>
+</head>
+<body>
+    
+        <div id="desktop">
+            <span style="font-size:12px;border:1px solid gray;float:right; padding:5px;">Desenvolvido por: <a href="mailto:salgadonline@gmail.com">Rafael Willwohl Salgado</a></span>
+            <img src="~/images/cloudDesktop.png" alt="Cloud Desktop" title="Cloud Desktop" style="top:50%; left:50%; margin-top:-190px;margin-left:-256px; position:absolute; z-index:0;" />
+        </div>
+        <div id="taskbar" style="overflow:no-display;">
+            <ul style="height:500% !important; ">
+                <li id="start" >
+
+                </li>
+            </ul>
+        </div>
+        <div id="menu">
+            <ul class="menu">
+                <li id="rule2" >
+                    <a href="javascript:void(0)">nextMnu <span style="float:right;color:white;">>></span></a>
+                    <ul class="sub-menu">
+                        <li id="rule3"  style="">
+                            <a style="" onclick="new newWindow('/CRUDWindow/CRUD','testando 123');"> Pagina Teste ok </a>
+                        </li>
+                        <li id="Li1"  style="">
+                            <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste  <span style="float:right;color:white;">>></span></a>
+                            <ul class="sub-menu">
+                                <li id="Li3"  style="">
+                                    <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste </a>
+                                </li>
+                                <li id="Li4"  style="">
+                                    <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste  <span style="float:right;color:white;">>></span></a>
+                                    <ul class="sub-menu">
+                                        <li id="Li6"  style="">
+                                            <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste </a>
+                                        </li>
+                                        <li id="Li7"  style="">
+                                            <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste  <span style="float:right;color:white;">>></span></a>
+                                        </li>
+                                        <li id="Li8"  style="">
+                                            <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="Li5"  style="">
+                                    <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="Li2"  style="">
+                            <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li id="rule1" >
+                    <a href="javascript:void(0);" onclick="new newWindow('Modules/Security/views/Security_UserRegisterView.aspx?CloudModuleId=Security&moonViewEntityId=UserRegister','Controle de Currículos');">Controle de Currículos</a>
+                </li>
+                <li><a href="javascript:Logout();">Sair</a></li>
+            </ul>
+        </div>
+        <div id="BlockApplicationLayer" style="position:fixed;top:0;left:0;bottom:0;right:0; z-index:5000;background-color:Silver;display:none;">
+            <div style="position:absolute;left:50%; background-color:#ededed; top:50%; margin:-50px 0 0 -100px;padding: 0 4px 4px 4px;">
+                <fieldset style=" border:2px solid gray">
+                    <legend>Segurança:</legend>
+                    <ul class="blockApplicationUL" style="padding:10px;">
+                        <li><label for="username">Usuário:<input type="text" readonly="readonly" disabled="disabled" style="width:150px;margin-left:2px;" id="username" name="username"  /></label></li>
+                        <li><label for="password">Senha:<input type="password" style="width:150px;margin-left:12px;" id="password" name="password"  /></label></li>
+                        <li><input type="button" value="Desbloquear" /><input type="button" value="Sair" onclick="logout();" /></li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+﻿    *
+    {
+       text-decoration:none;
+       list-style-type: none;
+       padding:0 0 0 0;
+       margin:0 ;
+       font-family: Calibri,arial, Times New Roman;  
+    }
+    .blockApplicationUL li
+    {
+     margin: 10px;
+    }
+    html,body
+    {
+        height:100%;
+        width:100%;
+        overflow:hidden;             
+    }
+    
+    #desktop
+    {
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        width:100%;  
+        background-color:#ffffff;         
+    }
+       
+    #taskbar
+    {
+        z-index:200;
+        left:0;
+        right:0;
+        bottom:0;
+        position:absolute;           
+        background: #505050 url(../images/backTaskbar.gif) repeat-x;
+        opacity:0.9;
+	    -moz-opacity: 0.9;
+	    /*filter: alpha(opacity=90);*/
+	    background-color:#666666;
+    }
+              
+    #menu
+    {
+        display:none;
+        position:absolute;
+       /* width:200px;
+        height:200px;
+        overflow:scroll;*/
+        left: 0;
+        z-index:200;
+        /*background-color:Red;*/
+    }
+    
+    #start
+    {
+        width:30px;
+        height:30px;
+        background-image: url(../images/startBack.gif);    
+        float:left;
+        margin-right:5px;        
+    } 
+   
+	/* window*/
+	
+	.window
+	{
+	    position:absolute;
+	    padding:0 8px 0 0;
+		background:transparent url(../images/windowBorder.gif) 100% 10% repeat-y;
+	}
+	
+	.windowNoFocus
+	{
+	    position:absolute;
+	    padding:0 8px 0 0;
+		background:transparent url(../images/windowBorder.gif) 100% 10% repeat-y;
+		opacity:0.7;
+	    -moz-opacity: 0.7;
+	    filter: alpha(opacity=70);
+	}
+	
+	.windowBorderLeft {
+		padding:0 0 0 8px;
+		background:transparent url(../images/windowBorder.gif) 0 10% repeat-y;
+		width:400px;		
+	}
+	
+	.windowBorderTop {
+		height:24px;
+		background:transparent url(../images/windowBorderTop.gif) 100% 0 no-repeat;
+		cursor: move;		
+	}	
+	.windowBackHead {
+		height:24px;
+		margin:-5px -8px;
+		background:url(../images/windowBackHead.gif) repeat-x;		
+	}
+	.windowTopCorner{
+		width:9px;
+		height:24px;
+		float:left;
+		background:url(../images/windowCornerTop.gif) 0 0 no-repeat;
+		background-color:White;
+	}
+	.windowTitle
+	{
+	    color:darkblue;
+	    font-weight:bold;
+	    float:left;
+	    padding-top:3px;
+	    display: inline;
+	    height:20px;	    
+	}
+	.windowMnu
+	{
+	    width:106px;
+	    height: 19px;
+	    background-color:transparent; 
+	    float:right;
+	    margin-top:2px;
+	    margin-right:5px; 	 
+	    cursor:pointer;	    
+	}	
+	.windowMnuMin
+	{
+	    float:left;
+	    width:29px;
+	    height:19px;	    
+	}
+	.windowMnuMin:hover
+	{
+
+	    background-image:url(../images/windowMnuMin.gif);
+	}
+	.windowMnuMax
+	{
+	    float:left;
+	    width:27px;
+	    height:19px;
+	    background-color:Transparent;
+	}
+	.windowMnuMax:hover
+	{
+        float:left;
+	    width:27px;
+	    height:19px;
+	 
+	    background-image:url(../images/windowMnuMaxHover.gif);
+	}
+	.windowMnuRes
+	{
+	    float:left;
+	    width:27px;
+	    height:19px;
+	    background-image:url(../images/windowMnuRes.gif);
+	}
+	.windowMnuRes:hover
+	{
+        float:left;
+	    width:27px;
+	    height:19px;
+	 
+	    background-image:url(../images/windowMnuResHover.gif);
+	}
+	.windowMnuClose
+	{
+	    float:left;
+	    width:49px;
+	    height:19px;
+	    background-color:Transparent;
+	}
+	.windowMnuClose:hover
+	{
+	    background-image:url(../images/windowMnuClose.gif);
+	}	
+	.windowBorderBottom {
+		height:17px;
+		margin:0px -8px;
+		background:transparent url(../images/windowBorderBottom.gif) 100% 100% no-repeat;		
+	}
+	
+	.windowBackBottom {
+		height:17px;
+		background:url(../images/windowBackBottom.gif) repeat-x;		
+	}
+	
+	.windowBottomCorner{
+		width:8px;
+		height:16px;
+		float:left;
+		background:url(../images/windowCornerBottom.gif) 0 100% no-repeat;
+		background-color:White;
+	}
+	.windowResize
+	{
+	    height:8px;
+	    width:10px;	    
+	    margin-right:8px;
+	    float:right;
+	    background-color: Transparent;
+	    cursor: se-resize;
+	}
+	.windowPage {
+	    background-color:#ffffff;
+	    overflow: auto;
+	    height:400px;
+	    width:100%;	  
+        margin:0 0 -5px 0;
+       
+	}
+    /*hack chrome*/
+  /*  @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .windowPage{ margin:5px 0 -5px 0px;}
+    }*/
+	
+	.windowTaskbar
+	{
+        margin-top: 1px;
+        height:26px;
+        width : 150px;
+        display:block;
+        float:left;
+        border: 1px solid silver;
+        background-color:transparent;
+        margin-left: 4px;        
+	}
+.windowTaskbarTitle {
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	color: aliceblue;
+	font-size: 12px;
+	cursor: pointer;
+	width: 125px;
+	height: 21px;
+}
+	.windowTaskbarClose
+	{
+	    background-image: url(../images/windowTaskClose.gif);
+	    float:right;
+	    width:14px;
+	    height:14px; 
+	}
+	.windowTaskbarClose:hover
+	{
+	    background-image: url(../images/windowTaskHoverClose.gif);	       
+	}
+	
+	#start:hover
+    {
+       background-image: url(../images/startBackHover.gif);  
+    }        
+    #menu 
+    {
+	    z-index: 200; position: absolute; display: none; left: 0px; border-radius: 3px;
+    }
+    .menu 
+    {
+	    border-bottom: black 1px solid; 
+	    min-width: 200px
+    }
+    .menu li 
+    {
+	    position: relative;
+        width: 200px;
+        height:30px;
+    }
+    .menu a
+    {
+	    
+        cursor: pointer;
+        border-radius: 3px;
+        border: 1px groove black;
+        border-color: silver;
+
+    }
+    
+    .menu > li a, li:hover ul li:hover a, li:hover ul li:hover ul li a, li:hover ul li:hover ul li:hover ul li:hover a
+    {
+        /*border-bottom: black 0px solid;*/	    
+	    padding:5px;
+	    display: block; 
+	    background-color: #ffdd00; 
+	    color: black;   
+       
+    }
+
+    .menu > li:hover a, li:hover ul li a,  li:hover ul li:hover ul li:hover a
+    {
+	    background-color: #1d651d; 
+	    color: white;
+       
+    }
+
+    .sub-menu {
+
+        display:none;
+        position: absolute;        
+        min-width: 200px ;
+        margin-left:99.5% ;
+        bottom:0;
+       
+        /*border-bottom:2px solid black;*/
+
+    }

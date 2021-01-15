@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        @RenderSection("head", required: false)
+        @Styles.Render("~/Content/css")
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/bootstrap")
+    </head>
+    <body>
+        @RenderSection("PageHeader", true)
+        <p>entre a header e body</p>
+        @RenderBody()
+        <p>entre body e footer</p>
+        @RenderSection("PageFooter",true)
+    </body>
+</html>
