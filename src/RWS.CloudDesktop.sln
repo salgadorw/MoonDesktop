@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RWS.CloudDesktop.Wbst", "RWS.CloudDesktop.Wbst\RWS.CloudDesktop.Wbst.csproj", "{B3B2F586-78B2-45BB-AD81-E1EA5072070F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RWS.CloudDesktop.App", "RWS.CloudDesktop.App\RWS.CloudDesktop.App.csproj", "{B3B2F586-78B2-45BB-AD81-E1EA5072070F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

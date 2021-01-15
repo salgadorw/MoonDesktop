@@ -1,7 +1,7 @@
 ﻿
 using Owin;
 
-namespace RWS.CloudDesktop.Wbst
+namespace RWS.CloudDesktop.App
 {
     public partial class Startup
     {

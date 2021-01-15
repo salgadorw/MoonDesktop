@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Optimization;
 
-namespace RWS.CloudDesktop.Wbst
+namespace RWS.CloudDesktop.App
 {
     public class BundleConfig
     {

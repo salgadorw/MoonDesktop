@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace RWS.CloudDesktop.Wbst
+namespace RWS.CloudDesktop.App
 {
     public class RouteConfig
     {

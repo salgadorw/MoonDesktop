@@ -6,7 +6,7 @@ using System.Web.Http;
 
 using Newtonsoft.Json.Serialization;
 
-namespace RWS.CloudDesktop.Wbst
+namespace RWS.CloudDesktop.App
 {
     public static class WebApiConfig
     {

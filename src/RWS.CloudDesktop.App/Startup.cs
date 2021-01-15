@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(RWS.CloudDesktop.Wbst.Startup))]
+[assembly: OwinStartup(typeof(RWS.CloudDesktop.App.Startup))]
 
-namespace RWS.CloudDesktop.Wbst
+namespace RWS.CloudDesktop.App
 {
     public partial class Startup
     {

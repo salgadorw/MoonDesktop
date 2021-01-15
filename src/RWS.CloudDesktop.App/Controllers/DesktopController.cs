@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace RWS.CloudDesktop.Wbst.Controllers
+namespace RWS.CloudDesktop.App.Controllers
 {
     
     public class DesktopController : Controller

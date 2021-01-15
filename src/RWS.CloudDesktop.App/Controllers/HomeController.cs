@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace RWS.CloudDesktop.Wbst.Controllers
+namespace RWS.CloudDesktop.App.Controllers
 {
     
     public class HomeController : Controller
