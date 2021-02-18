@@ -8,9 +8,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-
     <title>CloudDesktop</title>
-
     <link type="image/ico" rel="shortcut icon" href="/images/favicon.ico" />
     @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/desktop")
@@ -41,7 +39,7 @@
                     <a href="javascript:void(0)">nextMnu <span style="float:right;color:white;">>></span></a>
                     <ul class="sub-menu">
                         <li id="rule3"  style="">
-                            <a style="" onclick="new newWindow('/CRUDWindow/CRUD','testando 123');"> Pagina Teste ok </a>
+                            <a style="" onclick="new newWindow('@Href("~/CRUDWindow/CRUD")', 'testando 123');"> Pagina Teste ok </a>
                         </li>
                         <li id="Li1"  style="">
                             <a style="" onclick="new newWindow('testWindow.aspx','testando 123');"> Pagina Teste  <span style="float:right;color:white;">>></span></a>
