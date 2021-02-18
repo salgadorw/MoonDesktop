@@ -10,11 +10,12 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
     <title>CloudDesktop</title>
-    
+
     <link type="image/ico" rel="shortcut icon" href="/images/favicon.ico" />
-   
+    @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/desktop")
     @Scripts.Render("~/bundles/desktop")
+
     <!--ApplicationBlock-->
     <script type="text/javascript">
         function logout() { }
@@ -23,8 +24,9 @@
 <body>
     
         <div id="desktop">
-            <span style="font-size:12px;border:1px solid gray;float:right; padding:5px;">Desenvolvido por: <a href="mailto:salgadonline@gmail.com">Rafael Willwohl Salgado</a></span>
+            <span style="font-size:12px;border:1px solid gray;float:right; padding:5px;">Desenvolvido por: <a href="mailto:rafaelwsalgado@gmail.com">Rafael Willwohl Salgado</a></span>
             <img src="~/images/cloudDesktop.png" alt="Cloud Desktop" title="Cloud Desktop" style="top:50%; left:50%; margin-top:-190px;margin-left:-256px; position:absolute; z-index:0;" />
+           
         </div>
         <div id="taskbar" style="overflow:no-display;">
             <ul style="height:500% !important; ">
@@ -71,6 +73,7 @@
                         </li>
                     </ul>
 
+
                 </li>
                 <li id="rule1" >
                     <a href="javascript:void(0);" onclick="new newWindow('Modules/Security/views/Security_UserRegisterView.aspx?CloudModuleId=Security&moonViewEntityId=UserRegister','Controle de Currículos');">Controle de Currículos</a>
@@ -79,7 +82,7 @@
             </ul>
         </div>
         <div id="BlockApplicationLayer" style="position:fixed;top:0;left:0;bottom:0;right:0; z-index:5000;background-color:Silver;display:none;">
-            <div style="position:absolute;left:50%; background-color:#ededed; top:50%; margin:-50px 0 0 -100px;padding: 0 4px 4px 4px;">
+            <div id="BlockApplicationLayer_child" style="position:absolute;left:50%; background-color:#ededed; top:50%; margin:-50px 0 0 -100px;padding: 0 4px 4px 4px;">
                 <fieldset style=" border:2px solid gray">
                     <legend>Segurança:</legend>
                     <ul class="blockApplicationUL" style="padding:10px;">
@@ -89,8 +92,7 @@
                     </ul>
                 </fieldset>
             </div>
-        </div>
-    
+        </div>   
     
 </body>
 

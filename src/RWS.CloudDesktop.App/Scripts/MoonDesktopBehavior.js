@@ -465,5 +465,10 @@ window.addEventListener("load", function () {
     initializerVars();
     handleStartEvents();
     callInitFunctions();
+
+    $('div:not([id])').each(function () {
+        $(this).remove();
+    });
 });
+
 window.onresize = function () { resizeManager(); }
